@@ -1,0 +1,45 @@
+I've built a free mobile app called "Bitewise" using React Native, Expo and TypeScript. It has a barcode scanner (Open Food Facts API), an AI meal photo scanner (Google Gemini API free tier, limited to 3 scans per day), and a local daily calorie and macro tracker. There is no login and all data is stored on the device.
+
+Walk me through publishing it on both the Apple App Store and Google Play Store, step by step, assuming I'm a first-time publisher.
+
+Cover:
+
+1. PREPARING THE APP
+- Configure app.json / app.config.ts (name, bundle ID, package name, version, icons, splash screen, camera permission text)
+- Make sure API keys are not exposed in the app, and suggest a safe approach (e.g. a small proxy server or serverless function) for the Gemini key
+- Final pre-launch checklist and testing advice
+
+2. BUILDING
+- Use Expo EAS Build to create the iOS (.ipa) and Android (.aab) files
+- Give me the exact terminal commands
+
+3. DEVELOPER ACCOUNTS
+- How to set up an Apple Developer account and a Google Play Console account, including costs and verification steps
+
+4. STORE LISTINGS
+Write the following for me:
+- App title and subtitle (Bitewise)
+- Short description and full description, optimised for search (keywords: food scanner, calorie counter, barcode scanner, healthy eating)
+- Keyword list for the App Store
+- Category recommendations
+- Screenshot plan: which 5-6 screens to show, with caption text for each
+- App icon and feature graphic size requirements
+
+5. LEGAL AND COMPLIANCE
+- Write a simple privacy policy for Bitewise, covering camera use, photos sent to the Gemini API, and local data storage
+- Explain how to host it for free (e.g. GitHub Pages)
+- Fill in the Apple privacy "nutrition labels" and the Google Play Data Safety form for this app
+- Write a short health disclaimer (the app gives general nutritional information, not medical advice) and tell me where to place it
+- Advise on age rating
+
+6. SUBMISSION AND REVIEW
+- Step-by-step submission in App Store Connect and Play Console
+- Common reasons for rejection for food and health apps, and how to avoid them
+- Typical review times
+- What to do if I'm rejected
+
+7. AFTER LAUNCH
+- How to track downloads and crashes for free
+- Simple tips to get my first 100 downloads
+
+Keep the instructions in a numbered order I can follow, and ask me for any details you need, such as my bundle ID or contact email.

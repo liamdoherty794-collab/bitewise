@@ -1,0 +1,25 @@
+import { useId } from "react";
+
+export function Logo({ className = "h-16 w-16" }: { className?: string }) {
+  const id = useId().replace(/:/g, "");
+  return (
+    <svg viewBox="0 0 80 80" className={className} role="img" aria-label="Bitewise">
+      <defs>
+        <linearGradient id={id} x1="8" y1="6" x2="72" y2="76" gradientUnits="userSpaceOnUse">
+          <stop stopColor="#2ECC71" />
+          <stop offset="1" stopColor="#1B5E20" />
+        </linearGradient>
+      </defs>
+      <rect width="80" height="80" rx="22" fill={`url(#${id})`} />
+      <g fill="#F7FAF5">
+        <circle cx="40" cy="19.5" r="6.4" />
+        <path d="M31.5 28.5h17c2.2 0 3.5 1.6 3.5 4.2v9.2c0 2.2-1.2 3.8-3.2 3.8h-17.6c-2 0-3.2-1.6-3.2-3.8v-9.2c0-2.6 1.3-4.2 3.5-4.2z" />
+        <path d="M32 32.5C25.2 34 19.2 39.2 17.2 45.2c-.5 1.4.7 2.6 2 2.1 4.2-1.6 7.6-5.2 11.2-8.2 1-.8 1.4-2.4.2-3.2-.2-.1-.4-.2-.6-.4z" />
+        <path d="M48 32.5c6.8 1.5 12.8 6.7 14.8 12.7.5 1.4-.7 2.6-2 2.1-4.2-1.6-7.6-5.2-11.2-8.2-1-.8-1.4-2.4-.2-3.2.2-.1.4-.2.6-.4z" />
+        <path d="M33.2 45.2c-.8 5.4-2 10.2-3.2 14.2-.4 1.3.6 2.5 1.9 2.5h3.2c1.1 0 1.8-.8 2-1.8.7-4.2 1.2-9.2 1.4-14.9z" />
+        <path d="M46.8 45.2c.8 5.4 2 10.2 3.2 14.2.4 1.3-.6 2.5-1.9 2.5h-3.2c-1.1 0-1.8-.8-2-1.8-.7-4.2-1.2-9.2-1.4-14.9z" />
+        <path d="M61.5 36.2c4.2-6.2 9.4-6 11.2-1.4-4.4.8-7.6 3.8-11 7.6.2-2.2.2-4.2-.2-6.2z" />
+      </g>
+    </svg>
+  );
+}

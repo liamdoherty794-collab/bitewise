@@ -1,0 +1,34 @@
+Build me a mobile food scanning app (React Native with Expo, TypeScript) that combines two features:
+
+1. BARCODE SCANNER (like Yuka)
+- Scan packaged food barcodes with the camera
+- Pull product data from the Open Food Facts API
+- Show a 0-100 health score with a colour rating (green/orange/red) based on Nutri-Score, NOVA processing level, and additives
+- List problem ingredients and additives with a short plain-English explanation of each
+- Suggest 3 healthier alternatives from the same category
+
+2. AI MEAL SCANNER (like Cal AI)
+- Take a photo of a meal
+- Send it to a vision AI API to identify the foods and estimate portion sizes
+- Return calories, protein, carbs and fat
+- Let the user edit items or portions before saving
+
+3. DAILY TRACKER
+- Set a daily calorie and macro goal (simple onboarding: age, height, weight, goal)
+- Log scanned items to a daily diary
+- Show a progress ring for calories and bars for macros
+- Show a weekly history chart
+
+DESIGN
+- Clean, modern, minimal, with a big camera button in the centre of the bottom tab bar
+- Tabs: Scan, Diary, History, Profile
+- Light and dark mode
+- Smooth animations when a score appears
+
+TECH
+- Store data locally (SQLite or AsyncStorage), no login needed for the MVP
+- Keep API keys in an .env file
+- Handle errors: product not found, blurry photo, no internet
+- Include a setup README
+
+Start by giving me the full folder structure, then build the code file by file, and tell me how to run it on my phone with Expo Go.

@@ -1,0 +1,46 @@
+Build me a free mobile food scanning app called "Bitewise" (React Native with Expo, TypeScript) that combines two features:
+
+1. BARCODE SCANNER (like Yuka)
+- Scan packaged food barcodes with the camera
+- Pull product data from the Open Food Facts API (free)
+- Show a 0-100 health score with a colour rating (green/orange/red) based on Nutri-Score, NOVA processing level, and additives
+- List problem ingredients and additives with a short plain-English explanation of each
+- Suggest 3 healthier alternatives from the same category
+
+2. AI MEAL SCANNER (like Cal AI)
+- Take a photo of a meal
+- Send it to the Google Gemini API (free tier) to identify the foods and estimate portion sizes
+- Return calories, protein, carbs and fat
+- Let the user edit items or portions before saving
+- Limit to 3 AI photo scans per day, with a friendly message when the limit is reached
+
+3. DAILY TRACKER
+- Simple onboarding: age, height, weight, goal (lose, maintain, gain)
+- Calculate a daily calorie and macro goal
+- Log scanned items to a daily diary
+- Progress ring for calories, bars for macros
+- Weekly history chart
+
+BRANDING AND LOGO
+- App name: Bitewise
+- Logo: a clean, minimal silhouette of a healthy, balanced human body (arms slightly out, standing tall), in a fresh green gradient on a rounded-square background. Optionally add a small leaf or apple-bite shape integrated into the figure.
+- Create the logo as an SVG and use it for the app icon, splash screen and header
+- Colour palette: fresh green (#2ECC71), deep green (#1B5E20), off-white (#F7FAF5), charcoal text (#222222), with orange and red used only for warnings
+- Friendly, rounded font (e.g. Poppins or Nunito)
+
+DESIGN
+- Clean, modern, minimal
+- Big camera button in the centre of the bottom tab bar
+- Tabs: Scan, Diary, History, Profile
+- Light and dark mode
+- Smooth animation when a score appears
+
+TECH
+- Completely free to use, no login or account needed
+- Store data locally (SQLite or AsyncStorage)
+- Keep API keys in an .env file
+- Handle errors: product not found, blurry photo, no internet, daily limit reached
+- Structure the code so a Pro upgrade could be added later
+- Include a setup README
+
+Start by giving me the full folder structure, then build the code file by file, and tell me how to run it on my phone with Expo Go.
